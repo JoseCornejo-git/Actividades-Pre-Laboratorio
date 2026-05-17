@@ -1,0 +1,30 @@
+# Definición de Variable
+  VAR int Ubicacion F;
+  VAR int Ubicacion C;
+  VAR [5, 4] int espacio;
+  Read (Ubicacion F)
+  Read (Ubicacion C)
+# Proceso
+  if Ubicacion F <= [5] and {;
+     Ubicacion C <= [4];
+     {;
+        Return = Puesto Existe;
+  for F = 0   F <= [5]   F = F + 1;
+  for C = 0   C <= [4]   C = C + 1;
+     if Ubicacion F == 0 and {;
+        Ubicacion C == 0;
+        {;
+           Print "Puesto Disponible";
+        };
+     if Ubicacion F == 1 and {;
+        Ubicacion C == 1;
+        {;
+           Print "Puesto Ocupado";
+        };
+     if Ubicacion F != 0 , 1 and {;
+        Ubicacion C != 0 , 1;
+        {;
+           Print "Error Puesto Invalido";
+        };
+     };
+  };
